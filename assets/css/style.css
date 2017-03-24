@@ -1,0 +1,66 @@
+/*
+
+* Override Pages default styles or create your own styles here
+
+*/
+.tasks-nav{
+	height: 200px;
+	padding: 2px;
+	margin-top: 25px;
+	margin-bottom: 15px; 
+	align-items: center;
+	color:white;	
+	background-size: 200px 100%;
+	background-repeat: no-repeat;
+
+	height: 100%;
+	background-color: #89d071;
+	
+}
+
+
+
+.image {
+  opacity: 1;
+  
+  width: 100%;
+
+  height: 208px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .3s ease;
+  opacity: 1;
+  position: absolute;
+  top: 40%;
+  
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.tasks-nav:hover .image {
+  opacity: 0.1;
+}
+
+.tasks-nav:hover{
+	transition: .1s ease;
+	box-shadow: 10px 10px 55px #888888;
+ 
+}
+
+
+.tasks-nav:hover .middle {
+  opacity: 1;
+  top: 70%;
+  left: 50%;
+}
+
+.text {
+ 
+  color: white;
+  
+}
+

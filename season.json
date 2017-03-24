@@ -1,0 +1,242 @@
+[
+	{
+		"season": "KHARIF",
+		"crop": "Rice-Autumn",
+		"sowing": ["May","June","July","August","September"],
+		"harvesting": ["October","November","December","January"],
+		"month" : 6  
+	},
+	{
+		"season": "KHARIF",
+		"crop": "Rice-Winter",
+		"sowing": ["August","September","October","November"],
+		"harvesting": ["January","February","March","April"],
+		"month" : 6
+	},
+	{
+		"season": "KHARIF",
+		"crop": "Sorghum",
+		"sowing": ["May","June","July"],
+		"harvesting": ["September","October", "November","December"],
+		"month" : 4
+	},
+	{
+		"season": "KHARIF",
+		"crop": "Bajra",
+		"sowing": ["June","July","August"],
+		"harvesting": ["September","October","November"],
+		"month" : 4
+	},
+	{
+		"season": "KHARIF",
+		"crop": "Maize",
+		"sowing": ["May","June","July","August"],
+		"harvesting": ["September","October","November","December"],
+		"month" : 5
+	},
+	{
+		"season": "KHARIF",
+		"crop": "Ragi",
+		"sowing": ["May","June","July","August"],
+		"harvesting": ["September","October","November","December"],
+		"month" : 5
+	},
+	{
+		"season": "KHARIF",
+		"crop": "Small Millets ",
+		"sowing": ["June","July","August"],
+		"harvesting": ["September","October","November"],
+		"month" : 4
+	},
+	{
+		"season": "KHARIF",
+		"crop": "Tur",
+		"sowing": ["June","July"],
+		"harvesting": ["December","January","February"],
+		"month" : 7
+	},
+	{
+		"season": "KHARIF",
+		"crop": "Other Pulses (Kharif)",
+		"sowing": ["May","June","July","August"],
+		"harvesting": ["October","November","December"],
+		"month" : 5
+	},
+	{
+		"season": "KHARIF",
+		"crop": "Tobacco",
+		"sowing": ["April","May","June","July","August","September"],
+		"harvesting": ["September","October","November","December","January"],
+		"month" : 6
+	},
+	{
+		"season": "KHARIF",
+		"crop": "Groundnut",
+		"sowing": ["June","July","August"],
+		"harvesting": ["September","October","November","December"],
+		"month" : 4
+	},
+	{
+		"season": "KHARIF",
+		"crop": "Castor Seed",
+		"sowing": ["April","May","June","July","August"],
+		"harvesting": ["September","October","November","December","January","February"],
+		"month" : 6
+	},
+	{
+		"season": "KHARIF",
+		"crop": "Sesamum",
+		"sowing": ["April","May","June"],
+		"harvesting": ["August","September"],
+		"month" : 5
+	},
+	{
+		"season": "KHARIF",
+		"crop": "Cotton",
+		"sowing": ["May","June","July"],
+		"harvesting": ["December","January","February","March","April"],
+		"month" : 7
+	},
+	{
+		"season": "KHARIF",
+		"crop": "Nigerseed",
+		"sowing": ["June","July"],
+		"harvesting": ["September","October"],
+		"month" : 4
+	},
+	{
+		"season": "KHARIF",
+		"crop": "Sunflower",
+		"sowing": ["June","July","August"],
+		"harvesting": ["September","October","December"],
+		"month" : 4
+	},
+	{
+		"season": "RABI",
+		"crop": "Sorghum",
+		"sowing": ["September","October"],
+		"harvesting": ["January","February","March"],
+		"month" : 5
+	},
+	{
+		"season": "RABI",
+		"crop": "Maize",
+		"sowing": ["October","November","December"],
+		"harvesting": ["January","February","March"],
+		"month" : 4
+	},
+	{
+		"season": "RABI",
+		"crop": "Wheat",
+		"sowing": ["October","November","December"],
+		"harvesting": ["January","February","March"],
+		"month" : 4
+	},
+	{
+		"season": "RABI",
+		"crop": "Gram",
+		"sowing": ["October","November","December"],
+		"harvesting": ["January","February","March"],
+		"month" : 4
+	},
+	{
+		"season": "RABI",
+		"crop": "Cotton",
+		"sowing": ["August","September"],
+		"harvesting":[ "February","March","April"],
+		"month" : 7
+	},
+	{
+		"season": "RABI",
+		"crop": "Safflower",
+		"sowing": ["October","November"],
+		"harvesting":["January","February","March"],
+		"month" : 4
+	},
+	{
+		"season": "RABI",
+		"crop": "Linseed",
+		"sowing": ["October","November"],
+		"harvesting": ["January","February","March"],
+		"month" : 4
+	},
+	{
+		"season": "RABI",
+		"crop": "Rape & Mustard",
+		"sowing": ["October","November"],
+		"harvesting": ["January","February","March"],
+		"month" : 4
+	},
+	{
+		"season": "RABI",
+		"crop": "Sunflower",
+		"sowing": ["October","November"],
+		"harvesting": ["January","February","March"],
+		"month" : 4
+	},
+	{
+		"season": "SUMMER",
+		"crop": "Rice",
+		"sowing": ["January","February","March"],
+		"harvesting": ["April","June","July"],
+		"month" : 4
+	},
+	{
+		"season": "SUMMER",
+		"crop": "Ragi",
+		"sowing": ["January","February","March"],
+		"harvesting": ["April","June","July"],
+		"month" : 4
+	},
+	{
+		"season": "SUMMER",
+		"crop": "Groundnut",
+		"sowing": ["December","January","February","March"],
+		"harvesting": ["April","May","June","July"],
+		"month" : 5
+
+	},
+	{
+		"season": "SUMMER",
+		"crop": "Maize (Hybrid Varieties)",
+		"sowing": ["December","January","February","March"],
+		"harvesting": ["April","May","June","July"],
+		"month" : 5
+	},
+	{
+		"season": "SUMMER",
+		"crop": "Bajra (Hybrid Varieties)",
+		"sowing":["January","February","March"],
+		"harvesting": ["April","May","June","July"],
+		"month" : 4
+
+	},
+	{
+		"season": "SUMMER",
+		"crop": "Sorghum (Hybrid varieties)",
+		"sowing":["January","February","March"],
+		"harvesting":["April","May","June","July"],
+		"month" : 4
+	},
+	{
+		"season": "SUMMER",
+		"crop": "Small Millets(like irrigated Navane)",
+		"sowing":["January","February","March"],
+		"harvesting": ["April","May","June","July"],
+		"month" : 4
+	},
+	{
+		"season": "SUMMER",
+		"crop": "Sunflower",
+		"sowing":["January","February","March"],
+		"harvesting": ["April","May","June","July"],
+		"month" : 4
+	},
+	{
+		"season": "SUMMER",
+		"crop": "Sugarcane",
+		"sowing": ["June","July"],
+		"harvesting":["August","September "],
+		"month" : 3
+	}
+]
