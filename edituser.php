@@ -442,7 +442,28 @@ $uid=$_SESSION["username"];
                                 </tr>
                                 <tr>
                                   <td class="td-title">Current crops</td>
-                                  <td>Paddy</td>
+                                  <td>
+                    <?php
+                                  $cropres = pg_query($db,"SELECT * FROM ifarm.cultivation where uid='$uid'");
+
+                                  if(pg_num_rows($cropres) == 0){
+					                            echo 'No Crops Avalilable yet..';
+                                  }
+                                  else
+                                  {
+                                  					while($rowcrop = pg_fetch_assoc($cropres)){
+
+                                  if($rowcrop['crop'] != ""){
+                                    echo '"'.$rowcrop['crop'].'"  ';
+
+                                  }
+                                  }
+                                  }
+                                ?>
+
+
+
+                                  </td>
                                 </tr>
                                 <tr>
                                   <td class="td-title">Email</td>
@@ -488,7 +509,7 @@ $uid=$_SESSION["username"];
                                 <span class="label font-montserrat fs-11"><?php echo $row['soil'].' soil'?></span>
                                 <h3 class="text-white m-t-20">
                                 <?php
-                                  $cropres = pg_query($db,"SELECT * FROM ifarm.cultivation where land_no = '$land_no'");
+                                  $cropres = pg_query($db,"SELECT * FROM ifarm.cultivation where land_no = '$land_no' and uid='$uid'");
 
                                   $rowcrop = pg_fetch_assoc($cropres);
 

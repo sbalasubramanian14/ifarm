@@ -336,7 +336,7 @@ include('connect.php');
                                 <?php
                                 $uid = $_SESSION['username'];
                                 
-                                $result = pg_query($db,"SELECT * FROM ifarm.chemical where uid ='$uid'");
+                                $result = pg_query($db,"SELECT * FROM ifarm.chemicals where uid ='$uid'");
                                
                                 if (pg_num_rows($result) != 0)
                                 {
@@ -459,7 +459,7 @@ include('connect.php');
 
           var xobj = new XMLHttpRequest();
           xobj.overrideMimeType("application/json");
-          xobj.open('GET', 'tags.json', true);
+          xobj.open('GET', 'chem.json', true);
           xobj.onreadystatechange = function() {
               if (xobj.readyState == 4 && xobj.status == "200") {
                  callback(xobj.responseText);

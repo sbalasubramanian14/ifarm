@@ -11,13 +11,13 @@ $type = $_REQUEST['type'];
 $qty =  $_REQUEST['qty'];
 $ppqty = $_REQUEST['ppqty'];
 
-$test = pg_query($db,"SELECT * FROM ifarm.chemical where name='$name' and uid='$uid'");
+$test = pg_query($db,"SELECT * FROM ifarm.chemicals where name='$name' and uid='$uid'");
 if(pg_num_rows($test)){
-	$testold = pg_query($db,"SELECT * FROM ifarm.chemical where naem='$name' and uid='$uid'");
+	$testold = pg_query($db,"SELECT * FROM ifarm.chemicals where name='$name' and uid='$uid'");
 	$row = pg_fetch_assoc($testold);
 	$stock =  $row['stock'];
 	$stock =  $stock + $qty;
-	$test2 = pg_query($db,"UPDATE ifarm.chemical SET stock = $stock  where name='$name' and uid='$uid'");	
+	$test2 = pg_query($db,"UPDATE ifarm.chemicals SET stock = $stock  where name='$name' and uid='$uid'");	
 	if ($test2){
     header("location:chemicals.php");
 		
@@ -25,8 +25,8 @@ if(pg_num_rows($test)){
 }
 else{
 
-	$result = pg_query($db,"INSERT INTO ifarm.chemical VALUES ('$name','$type','$qty','$ppqty','$uid') ");
-
+	$result = pg_query($db,"INSERT INTO ifarm.chemicals VALUES ('$name','$type',$qty,$ppqty,'$uid') ");
+	//echo "INSERT INTO ifarm.chemicals VALUES ('$name','$type',$qty,$ppqty,'$uid') ";
 	if ($result){
 	    header("location:chemicals.php");
 		

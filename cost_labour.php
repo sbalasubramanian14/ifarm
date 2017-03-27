@@ -7,7 +7,7 @@ if(!isset($_SESSION["username"]))
 }
 
 include('connect.php');
-
+$uid=$_SESSION["username"];
 
  ?>
 
@@ -314,7 +314,7 @@ document.getElementById("worker").submit();
                   <tbody>
                     
                     <?php
-                    	$sql = pg_query($db, "SELECT * FROM ifarm.workers ORDER BY empid ASC");
+                    	$sql = pg_query($db, "SELECT * FROM ifarm.workers  where uid ='$uid' ORDER BY empid ASC");
                       $i=0;
                        while($row = pg_fetch_assoc($sql)){
 						

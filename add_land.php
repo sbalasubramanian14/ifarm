@@ -12,6 +12,6 @@ $uid = $_SESSION['username'];
 $result = pg_query($db,"INSERT INTO ifarm.land VALUES ('$land_no',$area,'$type','$uid') ");
 
 if ($result){
-    header("location:success.html");
+    header("location:edituser.php");
 }		
 ?>

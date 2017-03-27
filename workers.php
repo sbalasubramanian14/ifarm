@@ -269,14 +269,14 @@ $uid=$_SESSION["username"];
 				</tr>
 				<?php
 				if($filter == "all" ||  $filter == "All")
-				{ 	$sql = pg_query($db, "SELECT * FROM ifarm.workers ORDER BY empid ASC");
+				{ 	$sql = pg_query($db, "SELECT * FROM ifarm.workers  where uid ='$uid' ORDER BY empid ASC");
 			    }
 				else if($filter){
 					$filter =  ucfirst($filter);
-					$sql = pg_query($db, "SELECT * FROM ifarm.workers WHERE category='$filter' ORDER BY empid ASC");
+					$sql = pg_query($db, "SELECT * FROM ifarm.workers WHERE category='$filter' AND uid ='$uid' ORDER BY empid ASC");
 					//echo "SELECT * FROM ifarm.workers WHERE category='$filter' ORDER BY empid ASC";
 				}else{
-					$sql = pg_query($db, "SELECT * FROM ifarm.workers ORDER BY empid ASC");
+					$sql = pg_query($db, "SELECT * FROM ifarm.workers  where uid ='$uid' ORDER BY empid ASC");
 				}
 				if(pg_num_rows($sql) == 0){
 					echo '<tr><td colspan="8">No Workers data available..</td></tr>';

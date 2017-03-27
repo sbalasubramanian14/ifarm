@@ -7,7 +7,8 @@ if(!isset($_SESSION["username"]))
 }
 
 include('connect.php');
-
+$user=$_SESSION["username"];
+$uid=$_SESSION["username"];
 
  ?>
 
@@ -284,7 +285,7 @@ document.getElementById("worker").submit();
                   <tbody>
                     
                     <?php
-                    	$sql = pg_query($db, "SELECT * FROM ifarm.tool ORDER BY name ASC");
+                    	$sql = pg_query($db, "SELECT * FROM ifarm.tool WHERE uid='$uid' ORDER BY name ASC");
                       $i=0;
                        while($row = pg_fetch_assoc($sql)){
 						
